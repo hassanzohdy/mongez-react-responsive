@@ -1,0 +1,21 @@
+{
+    "name": "@mongez/react-responsive",
+    "version": "1.0.0",
+    "description": "Simple Responsive Handler for React Styled Components",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hassanzohdy/mongez-react-responsive"
+    },
+    "devDependencies": {
+        "@emotion/react": "^11.9.0"
+    },
+    "keywords": [
+        "react",
+        "responsive",
+        "styled",
+        "styled-components",
+        "styledComponents"
+    ],
+    "author": "hassanzohdy",
+    "license": "MIT"
+}
