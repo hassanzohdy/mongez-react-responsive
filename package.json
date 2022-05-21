@@ -1,6 +1,6 @@
 {
     "name": "@mongez/react-responsive",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Simple Responsive Handler for React Styled Components",
     "repository": {
         "type": "git",
