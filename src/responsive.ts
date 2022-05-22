@@ -24,19 +24,17 @@ export const media = (breakpoint: string, options: ResponsiveOptions = {}) => {
   } else if (typeof breakpointValue === 'number') {
     query = `@media (${optionsList.direction}-width: ${breakpointValue}px)`;
   } else if (Array.isArray(breakpointValue)) {
-    if ((breakpointValue as any[]).length === 2) {
-      let range: string[] = [];
+    let range: string[] = [];
 
-      if (breakpointValue[0] !== undefined) {
-        range.push(`(min-width: ${breakpointValue[0]}px)`);
-      }
-
-      if (breakpointValue[1] !== undefined) {
-        range.push(`(max-width: ${breakpointValue[1]}px)`);
-      }
-
-      query = `@media ${range.join(' and ')}`;
+    if (breakpointValue[0] !== undefined) {
+      range.push(`(min-width: ${breakpointValue[0]}px)`);
     }
+
+    if (breakpointValue[1] !== undefined) {
+      range.push(`(max-width: ${breakpointValue[1]}px)`);
+    }
+
+    query = `@media ${range.join(' and ')}`;
   }
 
   return query;

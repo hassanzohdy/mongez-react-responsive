@@ -337,7 +337,6 @@ You can also generate custom breakpoints by passing an argument to `mediaQueries
 ```ts
 import { mediaQueries } from '@mongez/react-responsive';
 
-
 const breakpoints = mediaQueries({
   breakpoints: {
     sm: 580,
@@ -364,7 +363,21 @@ Defining a breakpoint can be one of 5 ways as follows
 - `string`: will generate a custom media query for regardless the value of the `direction`.
   - `tablet: @media (min-width: 500px) and (max-width: 1000px)` will generate `@media (min-width: 500px) and (max-width: 1000px)`.
 
+## Be aware of the order
+
+The order of calling the breakpoints matters, this is a css concept and not related to the package, so make sure you're writing the breakpoints right, or make it in a range to ensure that the order won't get affected.
+
+## Tests
+
+To run tests run command: `yarn test` or `npm run test`.
+
+## Contribution
+
+To contribute to this package, fork the package, make your changes, add the proper tests for your changes, run tests then make Pull Request.
+
 ## Change Log
 
+- 1.0.5 (22 May 2022)
+  - Added unit tests
 - 1.0.0 (21 May 2022)
   - Initial Version

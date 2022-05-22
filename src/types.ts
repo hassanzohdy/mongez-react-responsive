@@ -2,7 +2,7 @@ import { CSSObject } from '@emotion/react';
 
 export type ResponsiveType = CSSObject;
 
-export type Breakpoint = string | number | [number, number] | [undefined, number];
+export type Breakpoint = string | number | [number, number] | [undefined, number] | [number, undefined] | [number];
 
 export type ResponsiveOptions = {
     /**
